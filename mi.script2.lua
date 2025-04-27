@@ -108,3 +108,13 @@ speedHack(100)
 spawn(autofarm)
 aimbot()
 esp()
+-- Intentar ejecutar el código del script de manera segura
+local success, errorMessage = pcall(function()
+    -- Aquí va la carga del script
+    loadstring(game:HttpGet("https://github.com/tuUsuario/mi-scripts-roblox/raw/main/miScript.lua"))()
+end)
+
+-- Si ocurre un error, mostrar el mensaje de error
+if not success then
+    warn("Hubo un error al ejecutar el script: " .. errorMessage)
+end
