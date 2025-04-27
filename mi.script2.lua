@@ -107,8 +107,7 @@ antiban()
 speedHack(100)
 spawn(autofarm)
 aimbot()
-esp()
--- Intentar ejecutar el código del script de manera segura
+esp()-- Intentar ejecutar el código del script de manera segura
 local success, errorMessage = pcall(function()
     -- Aquí va la carga del script
     loadstring(game:HttpGet("https://github.com/tuUsuario/mi-scripts-roblox/raw/main/miScript.lua"))()
